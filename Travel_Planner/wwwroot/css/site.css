@@ -1,0 +1,223 @@
+/* Reset some basic elements */
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic body styling */
+body {
+    font-family: 'Century Gothic', sans-serif;
+    color:white;
+    background-color: #6591ac;
+    padding: 20px;
+}
+
+/* Container for centering the content */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px; /* Or any desired height */
+}
+/* Ensuring the navbar-collapse centers the links and "Log In" is to the far right */
+.navbar-collapse {
+    display: flex;
+    justify-content: space-between; /* This will push "Log In" to the far right */
+    align-items: center; /* Vertically center the items */
+}
+
+/* Specific style for the Log In link */
+.nav-item:last-child .nav-link {
+    margin-right: 0; /* Remove margin if you want "Log In" to be at the edge */
+}
+
+/* Adjust the container class if needed */
+.container {
+    max-width: 100%; /* Allow the container to take the full width */
+}
+
+/* Additional styles for visual adjustments */
+.navbar-nav {
+    flex-direction: row; /* Ensure items are in a row */
+}
+
+    /* Remove any additional left margin from the first nav item if it's offset */
+    .navbar-nav .nav-item:first-child {
+        margin-left: 0;
+    }
+
+
+/* Navigation styling */
+
+
+nav a {
+    color: #fff; /* White text color */
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 0 10px;
+    padding: 5px 10px; /* Padding for a larger clickable area */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+    nav a:hover, nav a.active {
+        background-color: #6591ac; /* Change background color on hover and for active link */
+        color: #fff; /* Keep text color white */
+        border-radius: 10px; /* Rounded corners for links */
+    }
+/* Custom Navbar Styles */
+/* Custom Navbar Styles */
+.navbar {
+    border-radius: 20px; /* Rounded corners */
+    margin: auto;
+    max-width: 70%; /* Adjust this value to control the width of the navbar */
+    background-color: #b0c4de !important; /* Overriding Bootstrap's default background color */
+}
+
+/* Centering navbar brand/logo */
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navbar link styles */
+.nav-link {
+    color: #fff !important; /* Ensuring text color is white, using !important to override any other styles */
+    text-decoration: none;
+    font-size: 26px;
+    margin: 0 10px;
+    padding: 5px 10px; /* Padding for a larger clickable area */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+
+
+/* Custom styling for the Log In link */
+.navbar-nav .nav-item .nav-link {
+    font-weight: normal !important; /* Make sure Log In is not bold */
+}
+
+/* Position the "Log In" link to the far right */
+.navbar-nav:last-child {
+    margin-left: auto; /* This will push the last nav-item (Log In) to the right */
+}
+
+/* Other styles remain the same... */
+
+/* Ensuring the navbar-collapse centers the links when not collapsed */
+.navbar-collapse {
+    justify-content: center;
+}
+
+/* Style for the navbar toggler icon */
+.navbar-toggler {
+    border-color: rgba(0,0,0,0.1); /* Optional: Changes the toggler icon border color */
+}
+
+/* Custom logo styles if needed */
+.logo {
+    width: 90px; /* Adjust based on your logo size */
+}
+
+.navbar-nav:last-child {
+    margin-left: auto; /* Pushes the last nav-item (Log In) to the right */
+}
+
+
+    /* Specific style for the Log In link, if needed */
+    .navbar-nav:last-child .nav-link {
+        font-weight: bold; /* Example to make Log In stand out */
+    }
+
+/* Hero section */
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+    .hero h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+    }
+
+/* Main content styling */
+.main-content {
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Cards for travel plans */
+.card {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+    .card img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .card h3 {
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        font-size: 1em;
+        line-height: 1.5;
+    }
+
+/* Footer styling */
+footer {
+    background-color: #b0c4de;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+    footer p {
+        margin: 0;
+        font-size: 0.8em;
+    }
+
+/* Utility classes */
+.text-center {
+    text-align: center;
+}
+
+.text-light {
+    color: #fff;
+}
+
+.bg-light {
+    background-color: #f4f4f4;
+}
+
+.bg-dark {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Responsive media query */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    nav a {
+        font-size: 1em;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+}
